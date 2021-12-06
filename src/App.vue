@@ -1,30 +1,57 @@
-<template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+<script setuplang="ts">
+import Menu from './components/Menu.vue'
+import MobileMenu from './components/NavBarMobile.vue'
+import Footer from './components/Footer.vue'
+import { defineComponent } from 'vue'
+import { useThemeStore } from './stores/themeStore'
+
+export default defineComponent({
+  name: 'App',
+  components: {
+    Menu,
+    MobileMenu,
+    Footer
+  },
+  setup () {
+    const store = useThemeStore()
+    store.dark
+    return {
+      store
+    }
+  },
+})
+</script>
+
+<template> 
+  <div :class="store.dark ? 'container' : 'containerLight'">
+    <Menu />
+    <MobileMenu />
+    <main>
+      <router-view />
+    </main>
+    <Footer />
+  </div>
 </template>
 
 <style lang="scss">
+@use './constants/variables.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+.container {
+  height: 100%;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $primaryColor;
+  color: $secondaryColor;
+  &Light {
+    @extend .container;
+    background-color: $primaryColor-light;
+    color: $secondaryColor-light;
   }
 }
 </style>
