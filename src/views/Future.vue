@@ -29,23 +29,22 @@ export default defineComponent({
         <span class="textPink">making</span>/
         <span class="textGreen">want to make</span>:
         <ul>
-          <li>- iOS app</li>
-          <li>- Website with a backend written in python/django in the style of a job board for my local community</li>
-          <li>
+          <li class="textGreen">- Website with a backend written in python/django in the style of a job board for my local community</li>
+          <li class="textGreen">
             - A running app that tracks your mileage and recommends you new
             sneakers
           </li>
-          <li>
+          <li class="textPink">
             - A moose tracker app for highway driving (currently being
             built)
           </li>
-          <li>
+          <li class="textGreen">
             - An uber style app named 'Handy Dandy' that allows people to
             hire others for small tasks such as painting a fence, putting
             together a swing set, fix a pipe in your basement, assemble a
             bookshelf, etc.
           </li>
-          <li>BIMHA home page (in progress)</li>
+          <li class="textPink">BIMHA home page (in progress)</li>
         </ul>
       </div>
       <div class="hashTitle">
@@ -61,9 +60,7 @@ export default defineComponent({
           <li class="textPink">- Swift/SwiftUI</li>
           <li class="textGreen">- Rust</li>
           <li class="textGreen">- GoLang</li>
-          <li class="textGreen">
-            - Django Framework
-          </li>
+          <li class="textGreen">- Django Framework</li>
         </ul>
       </div>
       <div class="hashTitle">
