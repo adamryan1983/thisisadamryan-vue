@@ -1,4 +1,4 @@
-<script setuplang="ts">
+<script lang="ts">
 import Menu from './components/Menu.vue'
 import MobileMenu from './components/NavBarMobile.vue'
 import Footer from './components/Footer.vue'

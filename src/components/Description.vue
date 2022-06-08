@@ -18,10 +18,11 @@ const store = useThemeStore()
             Specializing in:
             <ul class="listing">
               <li>- React/NextJS Framework</li>
-              <li>- SASS</li>
+              <li>- SASS/Tailwind</li>
               <li>- Flutter/Dart</li>
               <li>- Vue3</li>
               <li>- Flutter/Dart</li>
+              <li>- Svelte</li>
               <li>- Swift/SwiftUI</li>
             </ul>
           </div>
@@ -32,31 +33,32 @@ const store = useThemeStore()
             <li>- MacOS</li>
             <li>- iTerm</li>
             <li>- xCode</li>
+            <li>- Jetbrains IntelliJ</li>
           </ul>
           <h4># Projects I've Created #</h4>
           <ul class="listing">
             <li>
               -
-              <a href='https://adamryanphotography.ca' target='_blank'>
-                Adam Ryan Photography web page
-              </a>
-            </li>
-            <li>
-              -
-              <a href='https://issherunnin.ca' target='_blank'>
-                Is She Runnin' Ferry Tracker
-              </a>
-            </li>
-            <li>
-              -
               <a href='https://downhomehvac.ca' target='_blank'>
-                Downhome HVAC Website
+                Downhome HVAC website
+              </a>
+            </li>
+            <li>
+              -
+              <a href='https://apps.apple.com/tt/app/is-she-runnin/id1571057949' target='_blank'>
+                Is She Runnin' Ferry Tracker iOS App
+              </a>
+            </li>
+            <li>
+              -
+              <a href='https://apps.apple.com/ca/app/bimha/id1591746695?platform=iphone' target='_blank'>
+                Bell Island Minor Hockey iOS app
               </a>
             </li>
             <li>
               -
               <a href='https://github.com/adamryan1983/mooose' target='_blank'>
-                'Mooose', a moose tracker app for android/ios
+                'Mooose', a moose tracker app for android/ios (in development)
               </a>
             </li>
           </ul>
@@ -122,30 +124,30 @@ const store = useThemeStore()
     & li {
       text-decoration: none;
     }
-  &Light {
-    background-color: $primaryColor-light;
-    @extend .descriptionContainer;
-    & h1, h2, h3, h4, h5 {
-      color: $fourthColor-light;
+    &Light {
+      background-color: $primaryColor-light;
+      @extend .descriptionContainer;
+      & h1, h2, h3, h4, h5 {
+        color: $fourthColor-light;
+      }
+      &a {
+        color: $secondaryColor;
+      }
+      &a:hover {
+        color: $fourthColor-light;
+      }
     }
-    &a {
-      color: $secondaryColor;
-    }
-    &a:hover {
-      color: $fourthColor-light;
-    }
-  }
   }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-&Light {
-  @extend .container;
-    background-color: $primaryColor-light;
-}
-}
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &Light {
+      @extend .container;
+      background-color: $primaryColor-light;
+    }
+  }
 }
 </style>

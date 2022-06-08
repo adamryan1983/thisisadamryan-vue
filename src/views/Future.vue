@@ -25,24 +25,26 @@ export default defineComponent({
         <span>### Projects ###</span>
       </div>
       <div>
-        Here are some projects I want to make:
+        Here are some projects I am 
+        <span class="textPink">making</span>/
+        <span class="textGreen">want to make</span>:
         <ul>
-          <li>- iOS app</li>
-          <li>- Website with a backend written in python/django</li>
-          <li>
+          <li class="textGreen">- Website with a backend written in python/django in the style of a job board for my local community</li>
+          <li class="textGreen">
             - A running app that tracks your mileage and recommends you new
             sneakers
           </li>
-          <li>
+          <li class="textPink">
             - A moose tracker app for highway driving (currently being
             built)
           </li>
-          <li>
+          <li class="textGreen">
             - An uber style app named 'Handy Dandy' that allows people to
             hire others for small tasks such as painting a fence, putting
             together a swing set, fix a pipe in your basement, assemble a
             bookshelf, etc.
           </li>
+          <li class="textPink">BIMHA home page (in progress)</li>
         </ul>
       </div>
       <div class="hashTitle">
@@ -56,14 +58,9 @@ export default defineComponent({
           <li class="textPink">- Java</li>
           <li class="textPink">- Flutter/Dart</li>
           <li class="textPink">- Swift/SwiftUI</li>
-          <li class="textGreen">- MongoDB</li>
-          <li class="textGreen">
-            - Design/UI fundamentals (...I know, not a programming
-            language!)
-          </li>
-          <li class="textGreen">
-            - ExpressJS/NodeJS for backend
-          </li>
+          <li class="textGreen">- Rust</li>
+          <li class="textGreen">- GoLang</li>
+          <li class="textGreen">- Django Framework</li>
         </ul>
       </div>
       <div class="hashTitle">
@@ -76,10 +73,6 @@ export default defineComponent({
             - Offer tutorials/lessons to others looking to lean to program
           </li>
           <li>- Have my own business offering web design/branded apps</li>
-          <li>
-            - Enroll in Apple Developer program and release my apps to the
-            AppStore
-          </li>
         </ul>
       </div>
     </div>
