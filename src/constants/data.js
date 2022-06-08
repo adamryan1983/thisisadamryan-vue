@@ -12,7 +12,7 @@ export const portfolioData = [
   {
     id: 2,
     blurb:
-      '<p>I built this mobile app using Flutter/Dart for the mobile front end and Firebase for the backend. It incorporates Google Maps API as well. This app is designed to allow motorists/travellers on the Trans Canada Highway(specifically in NL) to track moose sightings and alert other drivers about potential moose presence on the highway.</p>',
+      '<p>I am building this mobile app using Flutter/Dart for the mobile front end and Firebase for the backend. It incorporates Google Maps API as well. This app is designed to allow motorists/travellers on the Trans Canada Highway(specifically in NL) to track moose sightings and alert other drivers about potential moose presence on the highway.</p>',
     portURL: 'https://github.com/adamryan1983/mooose',
     portTitle: 'Mooose',
     tags: ['#Flutter', '#Dart', '#Firebase'],
@@ -21,11 +21,11 @@ export const portfolioData = [
   {
     id: 3,
     blurb:
-      '<p>I built this app using NextJS/React as a front end and Firebase as the backend. This is the web version of the Ferry App I created. The site features login/authentication using account creation, login in with Google option, and a log in with Facebook option.</p>',
-    portURL: 'https://issherunnin.ca',
-    portTitle: "Is She Runnin'? (Web)",
-    tags: ['#React', '#NextJS', '#Typescript', '#Firebase'],
-    image: '/images/issherunnin-web.png',
+      '<p>I built this app using NextJS/React as a front end and HarperDB as the backend. This is a CRUD app for managing the scores, schedules, and rosters for the BIMHA.</p>',
+    portURL: 'https://bimha.vercel.app',
+    portTitle: "BIMHA Management (Web)",
+    tags: ['#React', '#NextJS', '#Typescript', '#HarperDB'],
+    image: '/images/bimha.png',
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ export const portfolioData = [
     portURL: 'https://github.com/adamryan1983/Go-Fish-Game',
     portTitle: 'Go Fish game',
     tags: ['#javascript', '#html/css'],
-    image: '/images/go-fish.jpg',
+    image: '/images/go-fish.webp',
   },
 
   {
@@ -44,7 +44,7 @@ export const portfolioData = [
     portURL: 'https://adamryanphotography.ca',
     portTitle: 'Adam Ryan Photography website',
     tags: ['#javascript', '#html/css', 'tailwind css'],
-    image: '/images/arp-page.jpg',
+    image: '/images/arp-page.webp',
   },
   {
     id: 6,
@@ -53,6 +53,6 @@ export const portfolioData = [
     portURL: 'https://github.com/adamryan1983/covid-19-tracker',
     portTitle: 'Covid-19 Tracker App',
     tags: ['#react', '#javascript', '#html', '#materialUI'],
-    image: '/images/project-covid.jpg',
+    image: '/images/project-covid.webp',
   },
 ];
