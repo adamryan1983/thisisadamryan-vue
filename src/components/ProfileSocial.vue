@@ -3,7 +3,7 @@ import { defineComponent } from 'vue'
 import { useThemeStore } from '../stores/themeStore'
 
 export default defineComponent({
-  name: 'Description',
+  name: 'ProfileSocial',
   setup () {
     const store = useThemeStore()
     store.dark

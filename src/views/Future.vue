@@ -25,20 +25,21 @@ export default defineComponent({
         <span>### Projects ###</span>
       </div>
       <div>
-        Here are some projects I want to make:
+        Here are some projects I am 
+        <span class="textPink">currently working on </span>/
+        <span class="textGreen">want to make:</span>
         <ul>
-          <li>- iOS app</li>
-          <li>- Website with a backend written in python/django</li>
-          <li>
+          <li class="textGreen">- Website with a backend written in golang</li>
+          <li class="textGreen">
             - A running app that tracks your mileage and recommends you new
             sneakers
           </li>
-          <li>
+          <li class="textPink">
             - A moose tracker app for highway driving (currently being
             built)
           </li>
-          <li>
-            - An uber style app named 'Handy Dandy' that allows people to
+          <li class="textPink">
+            - An uber style app named 'Around The House' that allows people to
             hire others for small tasks such as painting a fence, putting
             together a swing set, fix a pipe in your basement, assemble a
             bookshelf, etc.
@@ -50,19 +51,13 @@ export default defineComponent({
       </div>
       <div>
         Here are some programming languages/frameworks I am
-        <span class="textPink">currently learning</span>/
+        <span class="textPink">currently learning </span>/
         <span class="textGreen">want to learn</span>:
         <ul>
-          <li class="textPink">- Java</li>
-          <li class="textPink">- Flutter/Dart</li>
           <li class="textPink">- Swift/SwiftUI</li>
           <li class="textGreen">- MongoDB</li>
           <li class="textGreen">
-            - Design/UI fundamentals (...I know, not a programming
-            language!)
-          </li>
-          <li class="textGreen">
-            - ExpressJS/NodeJS for backend
+            - Design/UI fundamentals
           </li>
         </ul>
       </div>
@@ -75,10 +70,8 @@ export default defineComponent({
           <li>
             - Offer tutorials/lessons to others looking to lean to program
           </li>
-          <li>- Have my own business offering web design/branded apps</li>
           <li>
-            - Enroll in Apple Developer program and release my apps to the
-            AppStore
+            - Have my own business offering web design/branded apps
           </li>
         </ul>
       </div>

@@ -1,5 +1,5 @@
-<script>
-import { LightBulbIcon } from '@heroicons/vue/solid'
+<script lang="ts">
+import { LightBulbIcon } from '@heroicons/vue/24/solid'
 import { defineComponent } from 'vue'
 import { useThemeStore } from '../stores/themeStore'
 
@@ -130,8 +130,8 @@ export default defineComponent({
 };
   
 .icon {
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
   margin: 0.5rem 0rem;
 }
 
