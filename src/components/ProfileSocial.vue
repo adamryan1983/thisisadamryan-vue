@@ -16,7 +16,7 @@ export default defineComponent({
 
 <template>
     <div class="photoSocialContainer">
-      <img src="/images/headshot.webp" alt="headshot">
+      <img src="/images/headshot.webp" alt="headshot" :class="store.dark ? 'headshot' : 'headshotLight'">
       <ul class="socialBar">
         <li>
           <a href="https://instagram.com/therunningdev" target="_blank">
@@ -64,10 +64,14 @@ export default defineComponent({
   border: 0px;
   width: 50vw;
   margin: 4rem 0;
-  & img {
+  & .headshotLight {
     border-radius: 50%;
     width: 300px;
     max-width: 90%;
+  }
+  & .headshot {
+    @extend .headshotLight;
+    filter: grayscale(1)
   }
 }
 
